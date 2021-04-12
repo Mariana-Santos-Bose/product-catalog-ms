@@ -1,0 +1,20 @@
+---
+apiVersion: v2
+name: hellogds-backend
+description: A Helm chart for Hello GDS Backend Microservice
+maintainers:
+  - name: TS Enable GDS
+    email: TS_Enable_GDS@bose.com
+type: application
+version: 0
+appVersion: 0
+dependencies:
+  - name: namespace
+    version: ~1.x # equivalent to >= 1.0.0 and < 2.0.0
+    repository: "@gds-eks-helm-releases"
+  - name: deploy
+    version: ~1.x # equivalent to >= 1.0.0 and < 2.0.0
+    repository: "@gds-eks-helm-releases"
+  - name: appconfig
+    version: ~1.x   # equivalent to >= 1.0.0 and < 2.0.0
+    repository: "@gds-eks-helm-releases"

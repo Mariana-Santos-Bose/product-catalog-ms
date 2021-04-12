@@ -1,0 +1,21 @@
+*.class
+
+# Maven
+target
+
+# IntelliJ
+.idea
+*.iml
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+mvnw
+
+.classpath
+.factorypath
+.project
+.settings
+**/.DS_Store

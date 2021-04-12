@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.bose.gds</groupId>
+        <artifactId>bose-spring-parent</artifactId>
+        <version>1.2.1</version>
+    </parent>
+
+    <groupId>com.bose.gds.hellogds-backend</groupId>
+    <artifactId>hellogds-backend</artifactId>
+    <version>0</version>
+    <packaging>pom</packaging>
+
+    <name>GDS - Hello GDS - Backend</name>
+    <description>A hello world application for GDS Backend microservices</description>
+
+    <scm>
+        <connection>scm:git:https://stash.gd.bose.com/scm/gdsfou/hellogds-backend.git</connection>
+        <developerConnection>scm:git:https://stash.gd.bose.com/scm/gdsfou/hellogds-backend.git</developerConnection>
+        <url>https://stash.gd.bose.com/projects/GDSFOU/repos/hellogds-backend/browse</url>
+    </scm>
+
+    <modules>
+        <module>hellogds-backend-api</module>
+        <module>hellogds-backend-server</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>Public Repository</name>
+            <url>http://nexus.gd.bose.com/content/groups/public</url>
+        </repository>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>releases</id>
+            <name>Releases</name>
+            <url>http://nexus.gd.bose.com/content/repositories/releases</url>
+        </repository>
+        <repository>
+            <snapshots/>
+            <id>snapshots</id>
+            <name>Snapshots</name>
+            <url>http://nexus.gd.bose.com/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Releases</name>
+            <url>http://nexus.gd.bose.com/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Snapshots</name>
+            <url>http://nexus.gd.bose.com/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>

@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: hellogds-backend
+
+  cloud:
+    kubernetes:
+      config:
+        namespace: ${NAMESPACE}
+        sources:
+          - name: hellogds-backend
+          - name: gdsconfig
+            namespace: config-v1
+        enable-api: true
+      reload:
+        enabled: true
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      base-path: '/ops'
+      exposure.include: '*'
+  endpoint:
+    restart:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+  server:
+    port: 8081

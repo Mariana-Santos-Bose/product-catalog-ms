@@ -1,0 +1,31 @@
+---
+global:
+  application:
+    scope: business
+    owner: gds
+    team: enable
+    department: global-digital
+  service:
+    type: ClusterIP
+    port: 80
+    targetPort: 8080
+
+appconfig:
+  application:
+    config:
+      all:
+        bose:
+          logging:
+            privacy-masking:
+              enabled: true   # true | false
+              field-names:
+                - name
+              message-value-names:
+                - firstName
+                - lastName
+        logging:
+          level:
+            ROOT: INFO
+        hellogdsbe:
+          user:
+            name: David
