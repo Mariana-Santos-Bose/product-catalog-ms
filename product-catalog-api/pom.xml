@@ -4,10 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
+    <parent>
+        <groupId>com.bose</groupId>
+        <artifactId>product-catalog-ms</artifactId>
+        <version>0</version>
+    </parent>
+
     <artifactId>product-catalog-api</artifactId>
-    <name>GDS - Hello GDS - Backend - API</name>
-    <version>1.0-SNAPSHOT</version>
-
-
+    <name>Product Catalog API</name>
 </project>

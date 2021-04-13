@@ -16,6 +16,6 @@ public class ProductCatalogServerApplication {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloGDSBackendApplication.class, args);
+        SpringApplication.run(ProductCatalogServerApplication.class, args);
     }
 }

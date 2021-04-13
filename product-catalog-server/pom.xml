@@ -4,19 +4,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>com.bose</groupId>
+        <artifactId>product-catalog-ms</artifactId>
+        <version>0</version>
+    </parent>
+
     <artifactId>product-catalog-server</artifactId>
-    <name>GDS - Hello GDS - Backend - Server</name>
+    <name>Product Catalog Server</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <start-class>com.bose.gds.hellogds.server.HelloGDSBackendApplication</start-class>
+        <start-class>com.bose.server.ProductCatalogServerApplication</start-class>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.bose.gds.hellogds-backend</groupId>
-            <artifactId>hellogds-backend-api</artifactId>
+            <groupId>com.bose</groupId>
+            <artifactId>product-catalog-api</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

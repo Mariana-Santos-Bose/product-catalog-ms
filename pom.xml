@@ -9,13 +9,13 @@
         <version>1.2.1</version>
     </parent>
 
-    <groupId>com.bose.gds.hellogds-backend</groupId>
-    <artifactId>hellogds-backend</artifactId>
+    <groupId>com.bose</groupId>
+    <artifactId>product-catalog-ms</artifactId>
     <version>0</version>
     <packaging>pom</packaging>
 
-    <name>GDS - Hello GDS - Backend</name>
-    <description>A hello world application for GDS Backend microservices</description>
+    <name>Product Catalog MS</name>
+    <description>Microservice that queries product data</description>
 
     <scm>
         <connection>scm:git:https://stash.gd.bose.com/scm/gdsfou/hellogds-backend.git</connection>
@@ -24,8 +24,8 @@
     </scm>
 
     <modules>
-        <module>hellogds-backend-api</module>
-        <module>hellogds-backend-server</module>
+        <module>product-catalog-api</module>
+        <module>product-catalog-server</module>
     </modules>
 
     <repositories>
